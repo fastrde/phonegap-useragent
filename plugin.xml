@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="de.fastr.phonegap.plugins.UserAgent" version="0.5.1">
+	<name>UserAgent</name>
+	<author>Fabian Strachanski</author>
+	<description>Set Custom UserAgent (iOS and Android)</description>
+	<license>MIT</license>
+	<keywords>useragent</keywords>
+	<repo>https://github.com/fastrde/phonegap-plugin-useragent.git</repo>
+	<issue>https://github.com/fastrde/phonegap-plugin-useragent/issues</issue>
+	<platform name="android">
+		<source-file src="src/android/UserAgent.java" target-dir="src/de/fastr/phonegap/plugins" />
+ 		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="UserAgent">
+				<param name="android-package" value="de.fastr.phonegap.plugins.UserAgent"/>
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+	</platform>
+	<!--<platform name="ios">
+		<header-file src="src/ios/CDVCheckGPS.h" />
+		<source-file src="src/ios/CDVCheckGPS.m" />
+		<config-file target="config.xml" parent="/*">
+			<feature name="CheckGPS">
+				<param name="ios-package" value="CheckGPS" />
+			</feature>
+		</config-file>
+	</platform>-->
+</plugin>
