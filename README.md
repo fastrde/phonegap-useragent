@@ -1,3 +1,5 @@
+## not maintained anymore
+
 Custom UserAgent Plugin for Android and iOS
 ===========================================
 
